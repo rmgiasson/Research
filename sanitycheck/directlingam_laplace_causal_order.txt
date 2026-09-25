@@ -1,0 +1,8 @@
+DirectLiNGAM causal ordering
+===========================
+
+Index ordering:
+[np.int64(0), np.int64(1), np.int64(3), np.int64(2), np.int64(4)]
+
+Variable ordering:
+X1 -> X2 -> X4 -> X3 -> X5

@@ -1,0 +1,42 @@
+DirectLiNGAM Synthetic Test
+===========================
+
+Dataset: 5-node Laplace noise
+Input file: laplace_data_5node.csv
+Samples: 1000
+Variables: 5
+Feature ordering: X1, X2, X3, X4, X5
+
+Preprocessing
+-------------
+Mean-centered: YES
+Standardized: NO
+Other preprocessing: NONE
+
+Native adjacency matrix convention
+----------------------------------
+B[i,j] represents X_j -> X_i.
+Rows are targets/children.
+Columns are sources/parents.
+Matrix entries are estimated causal coefficients.
+
+Parameters
+----------
+Random seed: 42
+Method: DirectLiNGAM
+
+Software
+--------
+Python: 3.10.8 | packaged by conda-forge | (main, Nov 22 2022, 08:23:14) [GCC 10.4.0]
+NumPy: 2.2.6
+Pandas: 2.3.3
+scikit-learn: 1.7.2
+lingam: 1.12.2
+
+Runtime
+-------
+0.036210 seconds
+
+Estimated causal ordering
+-------------------------
+X1 -> X2 -> X4 -> X3 -> X5
